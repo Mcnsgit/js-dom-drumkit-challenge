@@ -1,0 +1,54 @@
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    margin: 0;
+}
+
+.DrumKit {
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    padding: 20px;
+    background: linear-gradient(to right, #6dd5ed, #2193b0);
+}
+
+.drum-ui h1 {
+    color: #fff;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.keys {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.drum {
+    cursor: pointer;
+    margin: 10px;
+    padding: 15px 25px;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    background-color: rgba(255, 255, 255, 0.3);
+    box-shadow: 0 5px rgba(0, 0, 0, 0.2);
+    transition: transform 0.1s, background-color 0.3s;
+}
+
+.drum:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.pressed {
+    transform: scale(0.9);
+    background-color: rgba(255, 255, 255, 0.6);
+}
