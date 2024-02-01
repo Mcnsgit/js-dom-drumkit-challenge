@@ -1,54 +1,81 @@
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Bangers', cursive;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #f0f0f0;
+    background: radial-gradient(circle , #52df27, #240169, #d74177);
     margin: 0;
+    color: #fff;
 }
 
-.DrumKit {
+.drum-kit {
     text-align: center;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
-    border-radius: 15px;
-    padding: 20px;
-    background: linear-gradient(to right, #6dd5ed, #2193b0);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+    border-radius: 20px;
+    padding: 24px;
+    width: 80%;
+    max-width: 900px;
+    margin: 0 auto;
+    background: linear-gradient(125deg, #fc8c82, #e10f5c);
+    overflow: hidden;
+}
+
+.display {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .drum-ui h1 {
-    color: #fff;
+    margin-top: 0;
     margin-bottom: 30px;
-    text-transform: uppercase;
-    letter-spacing: 2px;
+    font-size: 78px;
+    color: #fff;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+    
 }
 
 .keys {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .drum {
     cursor: pointer;
-    margin: 10px;
-    padding: 15px 25px;
-    border: none;
-    border-radius: 8px;
+    margin: 15px;
+    padding: 30px;
+    border-radius: 50%; 
     color: white;
-    font-size: 16px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    background-color: rgba(255, 255, 255, 0.3);
-    box-shadow: 0 5px rgba(0, 0, 0, 0.2);
-    transition: transform 0.1s, background-color 0.3s;
+    font-size: 44px; 
+    background-color: rgba(228, 238, 189, 0.3);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    transition: all 0.2s ease;
+    border: 3px solid #282c34;
 }
+
+/* Individual drum styles */
+.boom { background-color: #f62d16; }
+.clap { background-color: #34495e;  }
+.hihat { background-color: #f1c40f; }
+.kick { background-color: #7f8c8d; padding: 35px; }
+.openhat { background-color: #9b59b6; }
+.ride { background-color: #3498db; padding: 30px; }
+.snare { background-color: #2ecc71; }
+.tink { background-color: #d35400; }
+.tom { background-color: #95a5a6; }
 
 .drum:hover {
     background-color: rgba(255, 255, 255, 0.5);
+    transform: translateY(-4px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
 }
 
 .pressed {
-    transform: scale(0.9);
-    background-color: rgba(255, 255, 255, 0.6);
+    transform: scale(0.88);
+    background-color: rgba(255, 255, 255, 0.7);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
 }
